@@ -1,0 +1,166 @@
+/* Base Styles */
+/* Setting up a clean, modern base font and background for the app */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Header Styles */
+/* Styling the main header for the to-do list */
+.header {
+  font-size: 2.5rem;
+  color: #4a90e2;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form Styles */
+/* Centering the form and adjusting its layout */
+.todo-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Form Row Styles */
+/* Aligning label and input fields in a row */
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Label Styles */
+/* Styling the label text */
+.form-row label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Input Field Styles */
+/* Styling the input field with padding, border, and focus effects */
+.form-row input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 250px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s;
+}
+
+/* Input Focus Styles */
+/* Changing border color on focus */
+.form-row input[type="text"]:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+/* Button Styles */
+/* Styling the Add button with background, padding, and hover effects */
+.btn {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Button Hover Styles */
+/* Adding shadow and background color change on hover */
+.btn:hover {
+  background-color: #357ab8;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* List Styles */
+/* Removing default list styles and adjusting width */
+.list {
+  list-style-type: none;
+  padding: 0;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* List Item Styles */
+/* Styling individual list items with padding, shadow, and hover effects */
+.list li {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+/* List Item Hover Styles */
+/* Enhancing shadow effect on hover */
+.list li:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Label in List Item Styles */
+/* Styling the label inside list items */
+.list li label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+}
+
+/* Checkbox Styles */
+/* Styling the checkbox with custom size and cursor */
+.list li input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Delete Button Styles */
+/* Styling the delete button with red background and hover effects */
+.btn-delete {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Delete Button Hover Styles */
+/* Darkening the background color and adding shadow on hover */
+.btn-delete:hover {
+  background-color: #e85a5a;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+/* Adjusting form input size and button text size for smaller screens */
+@media (max-width: 480px) {
+  .form-row input[type="text"] {
+    width: 180px;
+  }
+  
+  .header {
+    font-size: 2rem;
+  }
+  
+  .btn, .btn-delete {
+    font-size: 0.8rem;
+  }
+}
