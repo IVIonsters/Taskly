@@ -1,8 +1,16 @@
+:root {
+  --background-color: #F2DFD7;
+  --background-color-light: #FEF9FF;
+  --primary-color: #9F9FED;
+  --primary-accent: #D4C1EC;
+  --secondary-color: #8680fcce; 
+}
+
 /* Base Styles */
 /* Setting up a clean, modern base font and background for the app */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f4f4f9;
+  background-color: var(--background-color-light);
   color: #333;
   margin: 0;
   padding: 0;
@@ -16,7 +24,7 @@ body {
 /* Styling the main header for the to-do list */
 .header {
   font-size: 2.5rem;
-  color: #4a90e2;
+  color: var(--secondary-color);
   margin-bottom: 20px;
   text-align: center;
 }
@@ -59,15 +67,15 @@ body {
 /* Input Focus Styles */
 /* Changing border color on focus */
 .form-row input[type="text"]:focus {
-  border-color: #4a90e2;
+  border-color: var(--secondary-color);
   outline: none;
 }
 
 /* Button Styles */
 /* Styling the Add button with background, padding, and hover effects */
 .btn {
-  background-color: #4a90e2;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--background-color-light);
   border: none;
   padding: 10px 15px;
   border-radius: 5px;
@@ -79,7 +87,7 @@ body {
 /* Button Hover Styles */
 /* Adding shadow and background color change on hover */
 .btn:hover {
-  background-color: #357ab8;
+  background-color: var(--secondary-color);
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
